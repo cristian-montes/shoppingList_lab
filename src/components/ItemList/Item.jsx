@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import "./Item.css";
+import styles from  "./Item.module.css";
 
 export default function Item({ item, handleItemDelete, handleItemUpdate }) {
   const [editItem, setEditItem] = useState(false);
@@ -44,11 +44,8 @@ export default function Item({ item, handleItemDelete, handleItemUpdate }) {
 
 
   return (
-    <div>
-      <div>
+    <div className={styles.itemDiv}>
         {conditionalItem}
-      </div>
-      <div>
         <button
           className="button-list"
           type="text"
@@ -56,7 +53,6 @@ export default function Item({ item, handleItemDelete, handleItemUpdate }) {
         >
           <p> delete </p>
         </button>
-      </div>
     </div>
   );
 }

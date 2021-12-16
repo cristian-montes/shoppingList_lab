@@ -1,5 +1,5 @@
 import Item from "./Item";
-// import "./ItemList.css";
+import "./ItemList.css";
 
 export default function ItemList({ items, handleItemDelete }) {
   console.log("items", items);

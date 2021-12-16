@@ -1,0 +1,11 @@
+
+.itemDiv{
+    display: flex;
+    /* background-color: brown; */
+    width: 300px;
+}
+
+button{
+    margin: 5px;
+}
+
