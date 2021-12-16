@@ -9,6 +9,7 @@ export default function Item({ item, handleItemDelete, handleItemUpdate }) {
     conditionalItem = (
       <div role="editItem">
         <input 
+          type="text"
           value ={item.text}
           onChange={(event) =>{
             handleItemUpdate({
@@ -27,15 +28,17 @@ export default function Item({ item, handleItemDelete, handleItemUpdate }) {
     )
     } else {
        conditionalItem = (
-      <div role="item">
+      <>
         <p>{item.text}</p>
         <button
+          aria-label="edit"
+          name="edit"
           type="button"
           onClick={() => setEditItem(true)}
         >
           Edit
         </button>
-      </div>
+      </>
        )
     }
 
