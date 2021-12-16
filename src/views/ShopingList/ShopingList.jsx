@@ -50,6 +50,13 @@ export default function ListOfItems() {
     });
   };
 
+  const handleItemUpdate = (task) => {
+      dispatch({
+          type:  'update',
+          task
+      })
+  }
+
   const handleItemDelete = (taskId) => {
     dispatch({
       type: "delete",
@@ -61,7 +68,7 @@ export default function ListOfItems() {
     <>
       <h1> Your List!</h1>
       <AddItem handleAddItem={handleAddItem} />
-      <ItemList items={items} handleItemDelete={handleItemDelete} />
+      <ItemList items={items} handleItemDelete={handleItemDelete} handleItemUpdate={handleItemUpdate} />
     </>
   );
 }
