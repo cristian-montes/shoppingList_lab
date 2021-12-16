@@ -14,7 +14,6 @@ function itemsReducer(items, action) {
         {
           id: action.id,
           text: action.text,
-          done: false
         }
       ];
     }

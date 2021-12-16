@@ -7,7 +7,7 @@ export default function Item({ item, handleItemDelete, handleItemUpdate }) {
 
   if(editItem) {
     conditionalItem = (
-      <>
+      <div role="editItem">
         <input 
           value ={item.text}
           onChange={(event) =>{
@@ -23,11 +23,11 @@ export default function Item({ item, handleItemDelete, handleItemUpdate }) {
         >
           Save
         </button>
-      </>
+      </div>
     )
     } else {
        conditionalItem = (
-      <>
+      <div role="item">
         <p>{item.text}</p>
         <button
           type="button"
@@ -35,7 +35,7 @@ export default function Item({ item, handleItemDelete, handleItemUpdate }) {
         >
           Edit
         </button>
-      </>
+      </div>
        )
     }
 

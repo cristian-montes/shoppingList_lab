@@ -17,7 +17,12 @@ export default function AddItem({ handleAddItem }) {
         value={text}
         onChange={(event) => setText(event.target.value)}
       />
-      <button disabled={!text.length} className="submit" type="submit">
+      <button 
+        // disabled={!text.length} 
+        className="submit" 
+        type="submit"
+        aria-label="newItem"
+        >
         New Item
       </button>
     </form>
