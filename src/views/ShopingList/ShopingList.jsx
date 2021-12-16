@@ -4,11 +4,7 @@ import ItemList from "../../components/ItemList/ItemList";
 
 
 
-const initialItems = [
-  { id: 330, text: "Meat 🍖", done: false },
-  { id: 331, text: "Potatoes 🥔", done: false },
-  { id: 332, text: "Broccoli 🥦", done: false }
-];
+const initialItems = [];
 
 function itemsReducer(items, action) {
   switch (action.type) {

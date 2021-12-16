@@ -45,14 +45,18 @@ export default function Item({ item, handleItemDelete, handleItemUpdate }) {
 
   return (
     <div>
-      {conditionalItem}
-      <button
-        className="button-list"
-        type="text"
-        onClick={() => handleItemDelete(item.id)}
-      >
-        <p className="p-item">{item.text}</p>
-      </button>
+      <div>
+        {conditionalItem}
+      </div>
+      <div>
+        <button
+          className="button-list"
+          type="text"
+          onClick={() => handleItemDelete(item.id)}
+        >
+          <p> delete </p>
+        </button>
+      </div>
     </div>
   );
 }
