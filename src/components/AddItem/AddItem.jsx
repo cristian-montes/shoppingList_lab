@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./AddItem.css";
+// import "./AddItem.css";
 
 export default function AddItem({ handleAddItem }) {
   const [text, setText] = useState("");

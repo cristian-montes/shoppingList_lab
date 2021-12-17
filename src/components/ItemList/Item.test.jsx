@@ -12,7 +12,7 @@ beforeEach(()=> {
     render(<App />);
 });
 
-it('should render a single item within a list', async () => {
+it('should updte and render a single item within a list', async () => {
     const edittedItem = await screen.findAllByRole('button', { name: 'edit' });
     userEvent.click(edittedItem[0]);
     const input = await screen.findAllByRole('textbox');
@@ -22,5 +22,4 @@ it('should render a single item within a list', async () => {
       expect(updateItemInput).toBeInTheDocument();
     });
   
-
  });
