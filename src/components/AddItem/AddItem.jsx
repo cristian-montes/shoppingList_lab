@@ -12,7 +12,6 @@ export default function AddItem({ handleAddItem }) {
   return (
     <form onSubmit={handleSubmit}>
       <input
-        className="main-input"
         placeholder="Add a new item..."
         value={text}
         onChange={(event) => setText(event.target.value)}
